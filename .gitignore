@@ -1,0 +1,9 @@
+.venv
+.idea
+images
+data
+test_images
+UI
+test.py
+TkinterGUI.py
+logs
