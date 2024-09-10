@@ -55,11 +55,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                                     lambda: self.os_opener(
                                         os.path.dirname(self.selected_image_metadata["current_image_path"])))
         self.data_init()
-        # found_item = self.folderView.findItems("IMG_20230508_144144.jpg", Qt.MatchRecursive)
-        # print(found_item)
-        # for item in found_item:
-        #     if item.parent().text(0) + '/IMG_20230508_144144.jpg' == 'D:/projects/VectorVision/images/IMG_20230508_144144.jpg':
-        #         item.setSelected(True)
 
     def data_init(self):
         result = session.query(Path).all()
